@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>324</y>
+      <w>108</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>JULIO VEGANOS E HIJOS</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>408</x>
+      <y>306</y>
+      <w>156</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Dashboard
+--
++entrarMenuRegistro(): int
++entrarMenuDashboard(): int
++mostrarDatosDashboard(int): void
+--
+-accion: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>426</x>
+      <y>90</y>
+      <w>126</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>Excepcion
+--
++what() const throw(): const char*
+--
+-mensaje_: string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>498</y>
+      <w>198</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Usuario
+--
++operator &lt;&lt; (const): friend
++setNombreDeusuario(const): void
++getNombreDeUsuario() const: string
++setNIF(const): void
++getNIF() const: string
++operator &lt; (const) const: bool
++escribir(string, string): void
+--
+-nombreDeUsuario: string
+-NIF: string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>234</y>
+      <w>198</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>SensorTemperatura
+--
++entrarMenuSensorTemperatura(): int
++mostrarDatosSensorTemperatura(int): void
++salirMenuSensorTemperatura(): void
+--
+-accion: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>306</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>SensorHumedad
+--
++entrarMenuSensorHumedad(): int
++mostrarDatosSensorHumedad(int): void
++salirMenuSensorHumedad(): void
+--
+-accion: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>90</y>
+      <w>174</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>CalidadDelAire
+--
++entrarMenuCalidadDelAire(): int
++mostrarDatosCalidadDelAire(int): void
++salirMenuCalidadDelAire(): void
+--
+-accion: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>162</y>
+      <w>192</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>NivelDeIluminacion
+--
++entrarMenuNivelDeIluminacion(): int
++mostrarDatosNivelDeIluminacion(int): void
++salirMenuNivelDeIluminacion(): void
+--
+-accion: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>378</y>
+      <w>162</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>CamaraRGB
+--
++entrarMenuCamaraRGB(): int
++mostrarDatosCamaraRGB(int): void
++salirMenuCamaraRGB(): void
+--
+-accion: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>450</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>CamaraTermica
+--
++entrarMenuCamaraTermica(): int
++mostrarDatosCamaraTermica(int): void
++salirMenuCamaraTermica(): void
+--
+-accion: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>18</x>
+      <y>522</y>
+      <w>180</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>GestionUsuarios
+--
++entrarMenuGestionUsuarios(): int
++mostrarDatosGestionUsuarios(int): void
++salirMenuGestionUsuarios(): void
++&lt;usuario&gt; Set: set
+--
+-accion: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>486</x>
+      <y>360</y>
+      <w>18</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>486</x>
+      <y>126</y>
+      <w>18</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;300.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>546</x>
+      <y>108</y>
+      <w>198</w>
+      <h>228</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>310.0;360.0;310.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>336</y>
+      <w>168</w>
+      <h>222</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>260.0;10.0;260.0;350.0;10.0;350.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>558</x>
+      <y>330</y>
+      <w>126</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>190.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>552</y>
+      <w>204</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>320.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>174</x>
+      <y>342</y>
+      <w>246</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>390.0;10.0;190.0;10.0;190.0;110.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>330</y>
+      <w>228</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>360.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>192</x>
+      <y>354</y>
+      <w>228</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>360.0;10.0;230.0;10.0;230.0;210.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>258</y>
+      <w>210</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>330.0;110.0;130.0;110.0;130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>186</x>
+      <y>114</y>
+      <w>240</w>
+      <h>204</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>380.0;320.0;380.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>204</x>
+      <y>186</y>
+      <w>216</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>340.0;210.0;210.0;210.0;210.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

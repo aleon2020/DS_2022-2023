@@ -1,0 +1,68 @@
+#include <iostream>
+#include <map>
+#include <string>
+
+using namespace std;
+enum gender {male, female};
+enum weekendday {Saturday, Sunday};
+enum errorFlag {ioError, success, working};
+
+// << operator is overloaded to show the enum value instead of index
+std::ostream& operator<<(std::ostream& out, const gender value);
+std::ostream& operator<<(std::ostream& out, const weekendday value);
+std::ostream& operator<<(std::ostream& out, const errorFlag value);
+
+int main() {
+  gender field;
+  weekendday day = Saturday;
+  errorFlag flag;  
+  // weekendday anotherDay = Wednesday; // syntax error
+  
+  field = male; // it must be used without quotation marks
+  cout << "The gender is " << field << endl; // it shows male
+  cout << "The day is " << day << endl; // it shows Saturday
+  
+  if (day == Saturday)
+    flag = success;
+  else
+    flag = errorFlag(2); // index 2 of errorFlag is working
+
+  cout << "And the flag shows " << flag << endl; // it shows success
+}
+
+std::ostream& operator<<(std::ostream& out, const gender value) {
+  static std::map<gender, std::string> strings;
+  if (strings.size() == 0) {
+#define INSERT_ELEMENT(p) strings[p] = #p
+    INSERT_ELEMENT(male);
+    INSERT_ELEMENT(female);
+#undef INSERT_ELEMENT
+  }
+
+  return out << strings[value];
+}
+
+std::ostream& operator<<(std::ostream& out, const weekendday value) {
+  static std::map<weekendday, std::string> strings;
+  if (strings.size() == 0) {
+#define INSERT_ELEMENT(p) strings[p] = #p
+    INSERT_ELEMENT(Saturday);
+    INSERT_ELEMENT(Sunday);
+#undef INSERT_ELEMENT
+  }
+
+  return out << strings[value];
+}
+
+std::ostream& operator<<(std::ostream& out, const errorFlag value) {
+  static std::map<errorFlag, std::string> strings;
+  if (strings.size() == 0) {
+#define INSERT_ELEMENT(p) strings[p] = #p
+    INSERT_ELEMENT(ioError);
+    INSERT_ELEMENT(success);
+    INSERT_ELEMENT(working);
+#undef INSERT_ELEMENT
+  }
+
+  return out << strings[value];
+}

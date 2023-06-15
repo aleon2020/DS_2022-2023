@@ -1,0 +1,1 @@
+int getTotal (int,int);
