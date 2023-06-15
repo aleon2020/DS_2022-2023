@@ -12,18 +12,18 @@ Este curso se nos ha pedido implementar un sistema de monitorización para un in
 
 Así que te recomiendo lo primero de todo, ver en detalle la PRÁCTICA 9, la cual implementa todos los conceptos, y después ir desde la práctica 1 hasta la práctica 8 para comprender y ver la evolución completa del sistema según se han ido viendo nuevos conceptos.
 
-## 1. Diapositivas utilizadas en clase
+## 2. Diapositivas utilizadas en clase
 
 Directorio 'Diapositivas Teoría': Dentro de este directorio se encuentran las diapositivas utilizadas en clase para abordar los contenidos teóricos de la asignatura.
 
-## 2. Ejemplos vistos en clase
+## 3. Ejemplos vistos en clase
 
 Directorio 'Ejemplos': Dentro de este directorio se encuentran los ejemplos de código vistos en clase, y algunos de ellos también aparecen en las dispositivas de Teoría.
 
-## 3. Prácticas
+## 4. Prácticas
 
 Directorios 'Prácticas': Dentro de este directorio se encuentra cada uno de los directorios correspondientes a cada una de las prácticas realizadas en la asignatura, los cuáles incluyen un directorio src donde se encuentra todo el código fuente de la práctica, el enunciado de la misma en formato PDF y un archivo README.md que explica brevemente lo que se ha hecho en cada práctica.
 
-## 4. Examen final
+## 5. Examen final
 
 Directorio 'Examen Final': Este directorio incluye la parte práctica del examen final, junto con su enunciado y una breve descripción de lo que se ha realizado (en mi caso no es una solución completa, así que podéis completarla clonando este repositorio y creando una nueva rama en la que vayáis a añadir estos cambios).
