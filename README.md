@@ -22,7 +22,7 @@ Directorio 'Ejemplos': Dentro de este directorio se encuentran los ejemplos de c
 
 ## 4. Prácticas
 
-Directorios 'Prácticas': Dentro de este directorio se encuentra cada uno de los directorios correspondientes a cada una de las prácticas realizadas en la asignatura, los cuáles incluyen un directorio src donde se encuentra todo el código fuente de la práctica, el enunciado de la misma en formato PDF y un archivo README.md que explica brevemente lo que se ha hecho en cada práctica.
+Directorio 'Prácticas': Dentro de este directorio se encuentra cada uno de los directorios correspondientes a cada una de las prácticas realizadas en la asignatura, los cuáles incluyen un directorio src donde se encuentra todo el código fuente de la práctica, el enunciado de la misma en formato PDF y un archivo README.md que explica brevemente lo que se ha hecho en cada práctica.
 
 ## 5. Examen final
 
