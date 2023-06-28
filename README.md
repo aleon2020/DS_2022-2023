@@ -4,6 +4,8 @@
 
 A continuación se detallan brevemente todos los contenidos que se encuentran en este repositorio, con el objetivo de facilitar la preparación del examen final de la asignatura y de abordar la misma lo mejor posible.
 
+IMPORTANTE: SI OBSERVAS QUE HAY ALGÚN ERROR O ALGO QUE FALTE EN ALGÚN ARCHIVO SUBIDO A ESTE REPOSITORIO (O SI HAY ALGUNA DUDA EN CUANTO A COMPRENSIÓN), DÉJAME UN ISSUE Y TRATARÉ DE RESOLVER EL PROBLEMA LO ANTES POSIBLE. NO TE OLVIDES DEJARME UNA STAR Y ESPERO QUE TODO ESTE MATERIAL TE SEA DE GRAN AYUDA.
+
 ## 1. Cosas IMPORTANTES a tener en cuenta
 
 En primer lugar, antes de que te aventures a ver todo el contenido de este repositorio, es importante recordar que esta es una asignatura "incremental" en cuanto a prácticas se refiere, es decir, parte de conceptos básicos en C++ (práctica 1) y termina con la implementación final de un sistema que se nos planteó al comienzo del curso.
