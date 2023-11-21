@@ -10,11 +10,11 @@ Si seleccionamos una opción correcta de las disponibles en el dashboard, podrem
 
 Diagrama de clases realizado a mano:
 
-https://urjc-my.sharepoint.com/:i:/g/personal/a_leon_2020_alumnos_urjc_es/ERKbap-fJRFIuqLMpNsMjFAB30xBLvTjx4m_dXxsjIl_Pg?e=FK3V7Y
+https://urjc-my.sharepoint.com/:i:/g/personal/a_leon_2020_alumnos_urjc_es/ERKbap-fJRFIuqLMpNsMjFAB30xBLvTjx4m_dXxsjIl_Pg?e=uAjr2i)
 
 Diagrama de ejecución realizado a mano:
 
-https://urjc-my.sharepoint.com/:i:/g/personal/a_leon_2020_alumnos_urjc_es/EZXSFgWj4fRFvjer1F8CLAcB6GFPM8i0_Qov5ZlXjiwPsg?e=BcEqrh
+https://urjc-my.sharepoint.com/:i:/g/personal/a_leon_2020_alumnos_urjc_es/EZXSFgWj4fRFvjer1F8CLAcB6GFPM8i0_Qov5ZlXjiwPsg?e=QECwHl
 
 
 
