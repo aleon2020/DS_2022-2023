@@ -16,16 +16,16 @@ Así que te recomiendo lo primero de todo, ver en detalle la PRÁCTICA 9, la cua
 
 ## 2. Diapositivas utilizadas en clase
 
-Directorio 'Diapositivas Teoría': Dentro de este directorio se encuentran las diapositivas utilizadas en clase para abordar los contenidos teóricos de la asignatura.
+Directorio ['Diapositivas Teoría'](https://github.com/aleon2020/DS_2022-2023/tree/main/Diapositivas%20Teor%C3%ADa): Dentro de este directorio se encuentran las diapositivas utilizadas en clase para abordar los contenidos teóricos de la asignatura.
 
 ## 3. Ejemplos vistos en clase
 
-Directorio 'Ejemplos': Dentro de este directorio se encuentran los ejemplos de código vistos en clase, y algunos de ellos también aparecen en las dispositivas de Teoría.
+Directorio ['Ejemplos'](https://github.com/aleon2020/DS_2022-2023/tree/main/Ejemplos): Dentro de este directorio se encuentran los ejemplos de código vistos en clase, y algunos de ellos también aparecen en las dispositivas de Teoría.
 
 ## 4. Prácticas
 
-Directorio 'Prácticas': Dentro de este directorio se encuentra cada uno de los directorios correspondientes a cada una de las prácticas realizadas en la asignatura, los cuáles incluyen un directorio src donde se encuentra todo el código fuente de la práctica, el enunciado de la misma en formato PDF y un archivo README.md que explica brevemente lo que se ha hecho en cada práctica.
+Directorio ['Prácticas'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas): Dentro de este directorio se encuentra cada uno de los directorios correspondientes a cada una de las prácticas realizadas en la asignatura, los cuáles incluyen un directorio src donde se encuentra todo el código fuente de la práctica, el enunciado de la misma en formato PDF y un archivo README.md que explica brevemente lo que se ha hecho en cada práctica.
 
 ## 5. Examen final
 
-Directorio 'Examen Final': Este directorio incluye la parte práctica del examen final, junto con su enunciado y una breve descripción de lo que se ha realizado (en mi caso no es una solución completa, así que podéis completarla clonando este repositorio y creando una nueva rama en la que vayáis a añadir estos cambios).
+Directorio ['Examen Final'](https://github.com/aleon2020/DS_2022-2023/tree/main/Examen%20Final): Este directorio incluye la parte práctica del examen final, junto con su enunciado y una breve descripción de lo que se ha realizado (en mi caso no es una solución completa, así que podéis completarla clonando este repositorio y creando una nueva rama en la que vayáis a añadir estos cambios).
