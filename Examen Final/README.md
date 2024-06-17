@@ -1,10 +1,9 @@
-# Ex-Ord-DS
+# Práctica Examen Final Convocatoria Ordinaria
 
 Para acceder como invitado:
 
-NOMBRE DE USUARIO: INVITADO
-
-NIF: AAAAAAAA
+- NOMBRE DE USUARIO: INVITADO
+- NIF: AAAAAAAA
 
 Al entrar en las cámaras se muestra que el usuario no está autorizado para visualizar esos datos.
 
