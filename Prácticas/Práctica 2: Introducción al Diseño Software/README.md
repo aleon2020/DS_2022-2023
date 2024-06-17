@@ -10,11 +10,12 @@ Si seleccionamos una opción correcta de las disponibles en el dashboard, podrem
 
 Diagrama de clases realizado a mano:
 
-https://urjc-my.sharepoint.com/:i:/g/personal/a_leon_2020_alumnos_urjc_es/ERKbap-fJRFIuqLMpNsMjFAB30xBLvTjx4m_dXxsjIl_Pg?e=uAjr2i)
+<p align="center">
+  <img src="https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%202:%20Introducci%C3%B3n%20al%20Dise%C3%B1o%20Software/media/Diagrama%20de%20Clases%20Pr%C3%A1ctica%202.jpg?raw=true">
+</p>
 
 Diagrama de ejecución realizado a mano:
 
-https://urjc-my.sharepoint.com/:i:/g/personal/a_leon_2020_alumnos_urjc_es/EZXSFgWj4fRFvjer1F8CLAcB6GFPM8i0_Qov5ZlXjiwPsg?e=QECwHl
-
-
-
+<p align="center">
+  <img src="https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%202:%20Introducci%C3%B3n%20al%20Dise%C3%B1o%20Software/media/Diagrama%20de%20Ejecuci%C3%B3n%20Pr%C3%A1ctica%202.jpg?raw=true">
+</p>
