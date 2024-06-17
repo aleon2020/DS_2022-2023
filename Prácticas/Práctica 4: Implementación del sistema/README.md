@@ -1,4 +1,4 @@
-﻿# Práctica 4: Implementación del sistema
+﻿# Práctica 4: Implementación del Sistema
 
 En esta práctica se pide realizar la primera implementación del sistema de monitorización que se venía diseñando en prácticas anteriores.
 
