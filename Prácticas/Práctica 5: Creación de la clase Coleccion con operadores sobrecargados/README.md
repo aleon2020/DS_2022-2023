@@ -1,7 +1,5 @@
-﻿# Práctica 5: Creación de la clase Colección con operadores sobrecargados
+﻿# Práctica 5: Creación de la Clase Colección con Operadores Sobrecargados
 
-En esta práctica se nos ha pedido poner en práctica los conceptos que hemos aprendido acerca de la sobrecarga de operadores.
+En esta práctica se pide poner en práctica los conceptos aprendidos acerca de la sobrecarga de operadores.
 
-Para ello, se nos ha proporcionado un esqueleto de una clase llamada Colección, donde lo único que hemos tenido que hacer es desarrollar los métodos que se nos proporcionan en el fichero de la clase dentro del fichero .cpp, para así tener un main funcional que nos muestre el funcionamiento de cada uno de ellos.
-
-
+Para ello, se proporciona un esqueleto de una clase llamada ['Coleccion.h'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%205%3A%20Creaci%C3%B3n%20de%20la%20clase%20Coleccion%20con%20operadores%20sobrecargados/src/Coleccion.h), donde se han ido desarrollando los métodos proporcionados en el fichero de la clase dentro del fichero ['Coleccion.cpp'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%205%3A%20Creaci%C3%B3n%20de%20la%20clase%20Coleccion%20con%20operadores%20sobrecargados/src/Coleccion.cpp), obteniendo así un fichero ['main.cpp'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%205%3A%20Creaci%C3%B3n%20de%20la%20clase%20Coleccion%20con%20operadores%20sobrecargados/src/main.cpp) que muestra el funcionamiento de cada uno de ellos.
