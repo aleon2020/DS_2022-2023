@@ -134,9 +134,7 @@ mostrarDatosDashboard(accion){
 
 Ya que de forma escrita sería bastante extenso y en algunos casos puede que hasta algo incomprensible de entender, he decidido grabar un vídeo explicando los pasos para realizar correctamente la compilación y ejecución del programa.
 
-LINK DEL VÍDEO:
-
-https://urjc-my.sharepoint.com/:v:/g/personal/a_leon_2020_alumnos_urjc_es/ES-km9TjkGlMrCKfeWcOg8kB7Dc8u6QlMnsIkdRkQOybPg?e=QbZw4l
+[Video Ejecución Práctica 9](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/media/Video%20Ejecuci%C3%B3n%20Pr%C3%A1ctica%209.mp4)
 
 ## 6. Descripción de los pasos a seguir para visualizar la documentación generada por Doxygen
 
