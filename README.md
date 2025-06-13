@@ -39,7 +39,3 @@ Directorio ['Ejemplos'](https://github.com/aleon2020/DS_2022-2023/tree/main/Ejem
 ## 4. Prácticas
 
 Directorio ['Prácticas'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas): Dentro de este directorio se encuentra cada uno de los directorios correspondientes a cada una de las prácticas realizadas en la asignatura, los cuáles incluyen un directorio src donde se encuentra todo el código fuente de la práctica, el enunciado de la misma en formato PDF y un archivo README.md que explica brevemente lo que se ha hecho en cada práctica.
-
-## 5. Examen final
-
-Directorio ['Examen Final'](https://github.com/aleon2020/DS_2022-2023/tree/main/Examen%20Final): Este directorio incluye la parte práctica del examen final, junto con su enunciado y una breve descripción de lo que se ha realizado (en mi caso no es una solución completa, así que podéis completarla clonando este repositorio y creando una nueva rama en la que vayáis a añadir estos cambios).
