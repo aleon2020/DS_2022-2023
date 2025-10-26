@@ -1,5 +1,5 @@
 ﻿# Práctica 8: Uso de Ficheros
 
-En esta práctica se pide utilizar los conceptos vistos en clase acerca de ficheros. Para este caso concreto, se pide crear un fichero binario en el que se vayan guardando el/los usuarios que vayan entrando en el dashboard del sistema de monitorización.
+This practice requires you to use the concepts discussed in class about files. For this specific case, you are asked to create a binary file to store the user(s) who log into the monitoring system's dashboard.
 
-Para ello, se ha creado la función escribir() dentro del fichero ['Usuario.cpp'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%208%3A%20Uso%20de%20ficheros/src/Usuario.cpp), el cual almacena en el fichero ['users.dat'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%208%3A%20Uso%20de%20ficheros/src/users.dat) los usuarios que han entrado al sistema y que se han ido creando mediante el menú de gestión de usuarios.
+To do this, the write() function has been created inside the ['Usuario.cpp'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%208%3A%20Uso%20de%20ficheros/src/Usuario.cpp) file, which stores the users who have logged into the system and who have been created using the user management menu in the ['users.dat'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%208%3A%20Uso%20de%20ficheros/src/users.dat) file.
