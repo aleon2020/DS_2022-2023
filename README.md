@@ -1,41 +1,41 @@
 # Diseño Software 2022-2023
 
-¡Bienvenido! En este repositorio se encuentran todos los materiales correspondientes a la asignatura de Diseño Software.
+Welcome! This repository contains all the materials for the subject **Diseño Software**.
 
-A continuación se detallan brevemente todos los contenidos que se encuentran en este repositorio, con el objetivo de facilitar la preparación del examen final de la asignatura y de abordar la misma lo mejor posible.
+Below is a brief description of all the content found in this repository, with the aim of facilitating preparation for the final exam and helping you tackle the subject as best as possible.
 
-IMPORTANTE: SI OBSERVAS QUE HAY ALGÚN ERROR O ALGO QUE FALTE EN ALGÚN ARCHIVO SUBIDO A ESTE REPOSITORIO (O SI HAY ALGUNA DUDA EN CUANTO A COMPRENSIÓN), DÉJAME UN ISSUE Y TRATARÉ DE RESOLVER EL PROBLEMA LO ANTES POSIBLE. NO TE OLVIDES DEJARME UNA STAR Y ESPERO QUE TODO ESTE MATERIAL TE SEA DE GRAN AYUDA.
+**IMPORTANT**: IF YOU NOTICE ANY MISTAKES OR MISSING IN ANY FILE UPLOADED TO THIS REPOSITORY (OR IF THERE IS ANY DOUBT REGARDING UNDERSTANDING), LEAVE ME AN ISSUE AND I WILL TRY TO RESOLVE THE PROBLEM AS SOON AS POSSIBLE. DON'T FORGET TO LEAVE ME A STAR AND I HOPE THAT ALL THIS MATERIAL IS OF GREAT HELP TO YOU.
 
-Clona este repositorio ejecutando el siguiente comando:
+Clone this repository by running the following command:
 
 ```sh
 git clone https://<token>@github.com/aleon2020/DS_2022-2023.git
 ```
 
-IMPORTANTE: Añade tu token tal y como se muestra. Esto se hace con el objetivo de no tener que introducir el token en la terminal cada vez que se quiera actualizar el repositorio utilizando el comando 'git pull'.
+**IMPORTANT**: Add your token exactly as shown. This is so you don't have to enter the token in the terminal every time you want to update the repository using the 'git pull' command.
 
-Si ya has clonado este repositorio, ejecuta el siguiente comando antes de que empieces a trabajar con él, ya que pueden haberse añadido nuevos cambios o modificaciones. Esto se hace con el objetivo de asegurarte de que tienes clonada la versión más reciente del repositorio:
+If you've already cloned this repository, run the following command before starting to work with it, as new changes or modifications may have been added. This is to ensure you have cloned the most recent version of the repository:
 
 ```sh
 git pull
 ```
 
-## 1. Cosas IMPORTANTES a tener en cuenta
+## 1. IMPORTANT things to keep in mind
 
-En primer lugar, antes de que te aventures a ver todo el contenido de este repositorio, es importante recordar que esta es una asignatura "incremental" en cuanto a prácticas se refiere, es decir, parte de conceptos básicos en C++ (práctica 1) y termina con la implementación final de un sistema que se nos planteó al comienzo del curso.
+First of all, before you venture into the entire contents of this repository, it's important to remember that this is an "incremental" course in terms of practice, that is, it starts with basic C++ concepts (practice 1) and ends with the final implementation of a system that was presented to us at the beginning of the course.
 
-Este curso se nos ha pedido implementar un sistema de monitorización para un invernadero, que está compuesto por varios sensores que toman datos (todo ello de forma simulada), por lo que las primeras prácticas consisten en crear un diagrama a mano de cómo podría funcionar ese sistema para después pasarlo a UML, después se irán creando las clases y métodos (ya usando código) que componen el sistema, y todo lo que viene después es ir implementando a nivel de código nuevos conceptos que se vayan viendo en Teoría (operadores de sobrecarga, contenedores, depuración, uso de ficheros, etc ...).
+This course we have been asked to implement a monitoring system for a greenhouse, which is composed of several sensors that collect data (all in a simulated way), so the first practices consist of creating a diagram by hand of how this system could work and then passing it to UML, then the classes and methods will be created (already using code) that make up the system, and everything that comes after is implementing at the code level new concepts that are seen in Theory (overload operators, containers, debugging, use of files, etc ...).
 
-Así que te recomiendo lo primero de todo, ver en detalle la PRÁCTICA 9, la cual implementa todos los conceptos, y después ir desde la práctica 1 hasta la práctica 8 para comprender y ver la evolución completa del sistema según se han ido viendo nuevos conceptos.
+So I recommend that you first look at PRACTICE 9 in detail, which implements all the concepts, and then go from practice 1 to practice 8 to understand and see the complete evolution of the system as new concepts have been seen.
 
-## 2. Diapositivas utilizadas en clase
+## 2. Slides used in class
 
-Directorio ['Diapositivas Teoría'](https://github.com/aleon2020/DS_2022-2023/tree/main/Diapositivas%20Teor%C3%ADa): Dentro de este directorio se encuentran las diapositivas utilizadas en clase para abordar los contenidos teóricos de la asignatura.
+Directory ['Diapositivas Teoría'](https://github.com/aleon2020/DS_2022-2023/tree/main/Diapositivas%20Teor%C3%ADa): This directory contains the slides used in class to address the theoretical content of the subject.
 
-## 3. Ejemplos vistos en clase
+## 3. Examples seen in class
 
-Directorio ['Ejemplos'](https://github.com/aleon2020/DS_2022-2023/tree/main/Ejemplos): Dentro de este directorio se encuentran los ejemplos de código vistos en clase, y algunos de ellos también aparecen en las dispositivas de Teoría.
+Directory ['Ejemplos'](https://github.com/aleon2020/DS_2022-2023/tree/main/Ejemplos): Within this directory are the code examples seen in class, and some of them also appear in the Theory slides.
 
-## 4. Prácticas
+## 4. Practices
 
-Directorio ['Prácticas'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas): Dentro de este directorio se encuentra cada uno de los directorios correspondientes a cada una de las prácticas realizadas en la asignatura, los cuáles incluyen un directorio src donde se encuentra todo el código fuente de la práctica, el enunciado de la misma en formato PDF y un archivo README.md que explica brevemente lo que se ha hecho en cada práctica.
+Directory ['Prácticas'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas): Within this directory are each of the directories corresponding to each of the practices carried out in the subject, which include a src directory where all the source code of the practice is located, the statement of the same in PDF format and a README.md file that briefly explains what has been done in each practice.
