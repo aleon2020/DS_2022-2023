@@ -1,9 +1,9 @@
 ﻿# Práctica 3: Identificación de las Clases en la Especificación de Requerimientos
 
-En esta práctica se incluye una nueva versión mejorada y digitalizada del Diagrama de Clases realizado en la Práctica 2, esta vez desarrollado en la aplicación UMLet, donde se han incluido muchas más funciones además de las que ya se tenían en el diagrama anterior.
+This practice includes a new, improved and digitized version of the Class Diagram created in Practice 2, this time developed in the UMLet application. It includes many more functions beyond those already included in the previous diagram.
 
-El funcionamiento es el siguiente: Se muestra por pantalla un mensaje de bienvenida que pide un número de usuario de 5 dígitos, aunque si se introduce un número de usuario incorrecto, volverá a la pantalla de bienvenida. Si el número de usuario introducido es correcto nos pedirá un NIF de 8 dígitos y, al igual que en el caso anterior, si el NIF introducido es incorrecto, volverá a la pantalla de bienvenida.
+The process works as follows: A welcome message appears on the screen asking for a 5-digit user ID. If the user ID is entered incorrectly, the user will return to the welcome screen. If the user ID is entered correctly, the user will be asked for an 8-digit NIF (Tax ID Number). As in the previous example, if the NIF is entered incorrectly, the user will return to the welcome screen.
 
-En caso de que tanto el número de usuario como el NIF sean correctos, se mostrará el dashboard, es decir, todos los sensores disponibles para consultar los datos de registro de la última hora, y una opción 'salir', que regresará a la pantalla de bienvenida.
+If both the user number and the NIF are correct, the dashboard will be displayed, showing all the sensors available for viewing log data from the last hour, and an "exit" option, which will return to the welcome screen.
 
-Si se selecciona una opción correcta de las disponibles en el dashboard, se podrán ver todos los cambios realizados de la última hora, con una opción 'volver', donde aparecerán de nuevo todas las opciones disponibles. Si la opción seleccionada es incorrecta, volverá a mostrarnos todas las posibles opciones numeradas del 1 al 7 (del 1 al 6 son para acceder a los registros de cada sensor y el número 7 es la opción de salir del sistema).
+If the correct option is selected from the dashboard, all the changes made in the last hour will be displayed, with a "return" option, which will reappear with all the available options. If the selected option is incorrect, all the possible options numbered 1 to 7 will be displayed again (1 to 6 are for accessing the logs for each sensor, and 7 is the option to log out of the system).
