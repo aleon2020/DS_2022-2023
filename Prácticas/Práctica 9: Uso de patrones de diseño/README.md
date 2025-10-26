@@ -1,92 +1,92 @@
 ﻿# Práctica 9: Uso de Patrones de Diseño
 
-## 1. Introducción
+## 1. Introduction
 
-Esta es la última práctica del curso de la asignatura de Diseño Software del Grado de Ingeniería en Robótica Software en el curso 2022/2023.
+This is the final practical exercise for the Software Design course in the Bachelor's Degree in Software Robotics Engineering for the 2022/2023 academic year.
 
-La parte práctica de la asignatura ha consistido principalmente en implementar un sistema de monitorización de un invernadero creado por la empresa 'Julio Veganos e Hijos', en el cual se pueden ver datos de los diferentes sensores que componen el sistema. 
+The practical part of the course consisted primarily of implementing a greenhouse monitoring system created by the company Julio Veganos e Hijos, which displays data from the various sensors that make up the system.
 
-En cada una de las prácticas del curso se han ido añadiendo nuevas uncionalidades al sistema según se iba avanzando con el temario de la asignatura.
+In each of the course's practical exercises, new functionalities were added to the system as progress was made through the course syllabus.
 
-A continuación se detalla una descripción general de todos los componentes del sistema y algunos de los métodos utilizados para su implementación:
+The following is a general description of all the system components and some of the methods used for its implementation:
 
-En primer lugar, es importante mencionar que la versión final del sistema es muy diferente comparada con la primera versión implementada en la Práctica 4, ya que por entonces se desconocían muchos conceptos de C++, por lo que según se han ido aprendiendo estos nuevos conceptos, se ha podido ir creando una versión mejorada del sistema, además de estar separada en varios ficheros .h y .cpp, algo que en la Práctica 4 era complicado de conseguir, motivo por el cual, la implementación del sistema en la Práctica 4 abarca un único fichero .cpp, además de que, a la hora de ejecutar el código, éste se convertía en un 'código castillo', ya que en esa versión no se usó ningún tipo de herramienta que permitiera limpiar la terminal cada vez que ejecutara el programa.
+First, it's important to mention that the final version of the system is very different from the first version implemented in Practice 4, as many C++ concepts were unknown at the time. Therefore, as these new concepts were learned, it was possible to create an improved version of the system. It is also separated into several .h and .cpp files, something that was difficult to achieve in Practice 4. For this reason, the implementation of the system in Practice 4 encompasses a single .cpp file. Furthermore, when the code was executed, it became a "castle code," since in that version, no tool was used to clear the terminal each time the program was run.
 
-NOTA: También se han modificado los repositorios de las Prácticas 7 y 8, a los cuales se ha añadido esta versión del sistema en lugar de la que se tenía anteriormente.
+**NOTE**: The repositories for Practices 7 and 8 have also been modified, with this version of the system added instead of the previous one.
 
-## 2. Detalles de implementación
+## 2. Implementation details
 
-A continuación se detalla un breve resumen de cómo y dónde se han ido implementando cada uno de los conceptos vistos durante el curso en la versión final del sistema:
+Below is a brief summary of how and where each of the concepts discussed during the course have been implemented in the final version of the system:
 
-- Creación por separado de archivos de cabecera (.h) y archivos de código fuente (.cpp), algo que en la Práctica 4 estaba unido en un solo archivo fuente.
+- Separate creation of header files (.h) and source code files (.cpp), something that in Practice 4 was united in a single source file.
 
-- Creación de un nuevo ['Makefile'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/Makefile) que tiene en cuenta todos y cada uno de los ficheros, tanto de cabecera como de código fuente.
+- Creation of a new ['Makefile'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/Makefile) that takes into account each and every one of the files, both header and source code.
 
-- Herencia y polimorfismo: Uso de objetos de una clase dentro de otra clase, y que relacionan directamente a las clases hijas con su clase padre (por ejemplo, en la clase ['GestionUsuarios'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/GestionUsuarios.cpp) se implementa la funcionalidad del menú de gestión de usuarios a través de los métodos de la clase ['Usuario'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Usuario.cpp)). Algo similar ocurre en el ['Dashboard'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Dashboard.cpp), donde se llama a los objetos de las clases de los sensores para que así puedan llamar a sus propios métodos y realizar su funcionalidad.
+- Inheritance and polymorphism: Use of objects of a class within another class, and that directly relate the child classes with their parent class (for example, in the ['GestionUsuarios'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/GestionUsuarios.cpp) class, the functionality of the user management menu is implemented through the class methods ['Usuario'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Usuario.cpp)). Something similar happens in the ['Dashboard'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Dashboard.cpp), where objects of the sensor classes are called so that they can call their own methods and perform their functionality.
 
-- En las clases ['Usuario'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Usuario.cpp) y ['GestionUsuarios'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/GestionUsuarios.cpp) se ha implementado todo lo referente a contenedores y STL visto durante el curso (para este sistema se ha utilizado uno de tipo Set), para así poder insertar nuevos usuarios, eliminarlos o visualizarlos.
+- In the classes ['Usuario'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Usuario.cpp) and ['GestionUsuarios'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/GestionUsuarios.cpp) everything related to containers and STL seen during the course has been implemented (for this one system has been used, one of type Set), in order to be able to insert new users, delete them or view them.
 
-- La creación de la función escribir() dentro de la clase ['Usuario'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Usuario.cpp), la cual almacena en el fichero 'users.dat' los usuarios que han entrado al sistema y que se han ido creando mediante el menú de gestión de usuarios.
+- The creation of the escribir() function within the ['Usuario'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Usuario.cpp) class, which stores in the 'users.dat' file the users who have entered the system and who have been created through the user management menu.
 
-- Y por último, todo lo relacionado con la Práctica 7 de la asignatura (manejo de excepciones, depuración con GDB y creación de la documentación con Doxygen). Las excepciones se han utilizado principalmente para mostrar un mensaje por pantalla en el caso de que la opción introducida sea incorrecta, o que los datos del usuario introducidos, tanto para entrar al sistema como para crearlos / eliminarlos en la gestión de usuarios sean incorrectos. También se ha depurado el programa con GDB mediante el uso de breakpoints en algunos de los lugares que se indicaban en la Práctica 7. Y por último, la documentación con Doxygen.
+- And finally, everything related to Practice 7 of the course (exception handling, debugging with GDB, and creating documentation with Doxygen). Exceptions were primarily used to display a message on the screen if the option entered was incorrect, or if the user data entered, both for logging in and for creating/deleting user data in user management, was incorrect. The program was also debugged with GDB by using breakpoints in some of the places indicated in Practice 7. And finally, the documentation was created with Doxygen.
 
-## 3. Descripción final del sistema
+## 3. Final System Description
 
-Para la versión final del sistema se han utilizado diez archivos de cabecera .h con su correspondiente fichero .cpp, además del fichero main.cpp.
+For the final version of the system, ten .h header files with their corresponding .cpp files were used, in addition to the main.cpp file.
 
-Todos estos archivos de cabecera pueden dividirse en cinco grupos:
+All these header files can be divided into five groups:
 
-USUARIO:
+**USUARIO**
 
-Este grupo está formado únicamente por el fichero de cabecera ['Usuario'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Usuario.cpp), en el cual se incluyen los setters y getters referentes al nombre de usuario y al NIF de aquellos usuarios que acceden al sistema, además del uso de varios operadores de sobrecarga (< y «).
+This group is made up solely of the header file ['Usuario'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Usuario.cpp), which includes the setters and getters referring to the username and NIF of those users who access the system, in addition to the use of several overload operators (< and «).
 
-DASHBOARD:
+**DASHBOARD**
 
-Este grupo está formado únicamente por el fichero de cabecera ['Dashboard'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Dashboard.cpp), el cual se encarga de mostrar los menús genéricos del sistema.
+This group consists only of the header file ['Dashboard'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Dashboard.cpp), which is responsible for displaying the generic menus of the system.
 
-Para implementar esta funcionalidad se han utilizado las siguientes funciones:
+To implement this functionality the following functions have been used:
 
-entrarMenuRegistro(): Es lo primero que aparece una vez se haya ejecutado el programa, donde se pide el nombre de usuario y el NIF de un usuario concreto para poder acceder al sistema por primera vez. Si se han introducido los datos correctamente, se accederá al dashboard.
+entrarMenuRegistro(): This is the first thing that appears once the program has been executed. It asks for a specific user's username and ID number to access the system for the first time. If the data has been entered correctly, the dashboard will open.
 
-entrarMenuDashboard(): Muestra el menú del dashboard, en el cual se encuentran todos los sensores que forman el sistema, una opción para crear nuevos usuarios, eliminarlos o visualizarlos, y una opción SALIR para detener la ejecución del programa.
+entrarMenuDashboard(): It displays the dashboard menu, which contains all the sensors that make up the system, an option to create new users, delete them, or view them, and an EXIT option to stop the program from running.
 
-mostrarDatosDashboard(): Muestra el submenú de la opción del dashboard que se haya seleccionado (opciones DATOS y VOLVER para los sensores, y las opciones INSERTAR/ELIMINAR/VER USUARIOS y VOLVER para la gestión de usuarios).
+mostrarDatosDashboard(): Displays the submenu of the selected dashboard option (DATA and BACK options for sensors, and INSERT/DELETE/VIEW USERS and BACK options for user management).
 
-SENSORES:
+**SENSORES**
 
-Este grupo está formado por los ficheros de cabecera ['CalidadDelAire'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CalidadDelAire.cpp), ['CamaraRGB'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CamaraRGB.cpp), ['CamaraTermica'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CamaraTermica.cpp), ['SensorHumedad'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/SensorHumedad.cpp), ['SensorTemperatura'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/SensorTemperatura.cpp) y ['NivelDeIluminacion'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/NivelDeIluminacion.cpp). Estos seis archivos siguen la misma estructura en cuanto a funciones se refiere.
+This group is made up of the header files ['CalidadDelAire'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CalidadDelAire.cpp), ['CamaraRGB'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CamaraRGB.cpp), ['CamaraTermica'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CamaraTermica.cpp), ['SensorHumedad'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/HumiditySensor.cpp), ['SensorTemperatura'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/SensorTemperatura.cpp) and ['NivelDeIluminacion'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/NivelDeIluminacion.cpp). These six files follow the same structure in terms of functions.
 
-Una vez se ha accedido al Dashboard y se ha seleccionado una de las seis opciones mencionadas anteriormente, podemos observar un submenú con dos opciones: La opción DATOS, que muestra los datos de cada sensor; y la opción VOLVER, que regresa al Dashboard.
+Once you've accessed the Dashboard and selected one of the six options mentioned above, you'll see a submenu with two options: DATA, which displays the data for each sensor; and BACK, which returns you to the Dashboard.
 
-Para implementar esta nueva funcionalidad se han utilizado las siguientes funciones:
+To implement this new functionality the following functions have been used:
 
-entrarMenu”NOMBRE_SENSOR/CAMARA”(): Entra en el menú de opciones del ”NOMBRE_SENSOR/CAMARA”.
+entrarMenu”NOMBRE_SENSOR/CAMARA”(): Enter the “SENSOR_NAME/CAMERA” options menu.
 
-mostrarDatos”NOMBRE_SENSOR/CAMARA”(): Opción DATOS (1) del menú de opciones del ”NOMBRE_SENSOR/CAMARA”.
+mostrarDatos”NOMBRE_SENSOR/CAMARA”(): DATA option (1) of the “SENSOR_NAME/CAMERA” options menu.
 
-salirMenu”NOMBRE_SENSOR/CAMARA”(): Opción VOLVER (2) del menú de opciones del ”NOMBRE_SENSOR/CAMARA”.
+salirMenu”NOMBRE_SENSOR/CAMARA”(): RETURN option (2) of the “SENSOR_NAME/CAMERA” options menu.
 
-GESTIÓN DE USUARIOS:
+**GESTIÓN DE USUARIOS**
 
-Este grupo está formado únicamente por el fichero de cabecera ['GestionUsuarios'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/GestionUsuarios.cpp), cuyo funcionamiento consiste, al igual que los sensores, en un submenú al cual se accede mediante una nueva opción creada en el Dashboard (opción 7 del Dashboard).
+This group is made up solely of the header file ['GestionUsuarios'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/GestionUsuarios.cpp), whose operation consists, like the sensors, of a submenu that is accessed through a new option created in the Dashboard (option 7 of the Dashboard).
 
-Para implementar esta funcionalidad se han utilizado las siguientes funciones:
+To implement this functionality the following functions have been used:
 
-entrarMenuGestionUsuarios(): Muestra el menú de la gestión de usuarios.
+entrarMenuGestionUsuarios(): Displays the user management menu.
 
-mostrarDatosGestionUsuarios(int): Muestra los datos de cada una de las opciones del menú de la gestión de usuarios, y a su vez incluye la funcionalidad de cada una de las opciones (INSERTAR (1), ELIMINAR (2) y VER USUARIOS (3)), las cuales se llevarán a cabo gracias al uso de un contenedor de tipo set, el cual se encarga de almacenar todos los nuevos usuarios que se vayan creando.
+mostrarDatosGestionUsuarios(int): It shows the data of each of the options in the user management menu, and in turn includes the functionality of each of the options (INSERT (1), DELETE (2) and VIEW USERS (3)), which will be carried out thanks to the use of a set type container, which is responsible for storing all the new users that are created.
 
-salirMenuGestionUsuarios(): Opción VOLVER (4) del menú de la gestión de usuarios.
+salirMenuGestionUsuarios(): RETURN option (4) in the user management menu.
 
-EXCEPCIÓN:
+**EXCEPCIÓN**
 
-Este grupo está formado únicamente por el fichero de cabecera ['Excepcion'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/include/Excepcion.h), el cual se encarga de lanzar excepciones con un mensaje configurable según la situación de error que se dé en el sistema, como introducir datos de usuario en un formato incorrecto, o introducir un número de opción que no exista (por ejemplo, introducir un 5 en un menú con dos opciones).
+This group consists solely of the header file ['Excepcion'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/include/Excepcion.h), which is responsible for throwing exceptions with a configurable message depending on the error situation that occurs in the system, such as entering user data in an incorrect format, or entering an option number that does not exist (for example, entering a 5 in a menu with two options).
 
-## 4. Descripción del patrón de diseño elegido e implementado
+## 4. Description of the chosen and implemented design pattern
 
-Para la implementación del sistema, según los conceptos vistos en la teoría, se podría indicar que se han usado dos patrones de diseño que comparten similitudes, pero también, algunas diferencias:
+For the implementation of the system, according to the concepts seen in the theory, it could be indicated that two design patterns have been used that share similarities, but also some differences:
 
-Para los ficheros relacionados con las opciones del ['Dashboard'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Dashboard.cpp) (['CalidadDelAire'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CalidadDelAire.cpp), ['NivelDeIluminacion'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/NivelDeIluminacion.cpp), ['SensorTemperatura'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/SensorTemperatura.cpp), ['SensorHumedad'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/SensorHumedad.cpp), ['CamaraRGB'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CamaraRGB.cpp), ['CamaraTermica'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CamaraTermica.cpp) y ['Gestionusuarios'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/GestionUsuarios.cpp) se ha usado un patrón de diseño "elemental genérico" (se llama desde una función a otra función, y en ocasiones una función depende de la otra => relación method-method). A continuación se muestra un breve resumen de cada una de las funciones:
+For files related to options of the ['Dashboard'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Dashboard.cpp) (['CalidadDelAire'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CalidadDelAire.cpp), ['NivelDeIluminacion'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/NivelDeIluminacion.cpp), ['SensorTemperatura'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/SensorTemperatura.cpp), ['SensorHumedad'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/SensorHumedad.cpp), ['CamaraRGB'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CamaraRGB.cpp), ['CamaraTermica'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/CamaraTermica.cpp) and ['Gestionusuarios'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/GestionUsuarios.cpp) a "generic elemental" design pattern has been used (calls are made from one function to another, and sometimes one function depends on the other => method-method relationship). A brief summary of each function is shown below:
 
 ```
 entrarMenuSENSOR(){
@@ -107,7 +107,7 @@ salirMenuSENSOR(){
 }
 ```
 
-El otro patrón de diseño que he implementado es bastante similar al anterior, el cual sólo se ha implementado en la clase ['Dashboard'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Dashboard.cpp), donde se ha añadido la creación de objetos de cada una de las clases que abarcan el patrón anterior para que éstas llamen a cada uno de sus métodos y así puedan realizar toda la funcionalidad anteriormente mencionada:
+The other design pattern that I have implemented is quite similar to the previous one, which has only been implemented in the ['Dashboard'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/src/Dashboard.cpp) class, where the creation of objects of each of the classes that cover the previous pattern has been added so that they call each of their methods and thus can perform all the functionality mentioned above:
 
 ```
 Dashboard(){Incluye el nombre de usuario y el NIF para entrar en el sistema}
@@ -130,42 +130,42 @@ mostrarDatosDashboard(accion){
 }
 ```
 
-## 5. Descripción de los pasos a seguir para la correcta compilación y ejecución del programa
+## 5. Description of the steps to follow for proper compilation and execution of the program
 
-Ya que de forma escrita sería bastante extenso y en algunos casos puede que hasta algo incomprensible de entender, se adjunta un vídeo en el que se explican los pasos para realizar correctamente la compilación y ejecución del programa.
+Since the written version would be quite lengthy and in some cases even somewhat incomprehensible, a video is attached explaining the steps to properly compile and execute the program.
 
 https://github.com/aleon2020/DS_2022-2023/assets/90764564/f6ab057f-dfe8-4f3b-a19a-191a1e07702e
 
-## 6. Descripción de los pasos a seguir para visualizar la documentación generada por Doxygen
+## 6. Description of the steps to follow to view the documentation generated by Doxygen
 
-En primer lugar, se han introducido todos los ficheros .h y .cpp dentro de un mismo directorio, para que la documentación sea creada correctamente.
+First, all .h and .cpp files are placed in a single directory so that the documentation is created correctly.
 
-A continuación se detallan los pasos a seguir para generar la documentación del sistema con Doxygen:
+The steps to follow to generate system documentation with Doxygen are detailed below:
 
-- Crea un directorio vacío llamado ['doxygen-doc'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/doc/doxygen-doc), en el cual se almacenará toda la documentación, tanto en html como en latex.
+- Create an empty directory called ['doxygen-doc'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/doc/doxygen-doc), in which all the documentation will be stored, both in html and latex.
 
 ```bash
  mkdir doxygen-doc
 ```
 
-- Crea el fichero ['Doxyfile'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/Doxyfile), en el cual se han modificado las siguientes líneas de acuerdo acordes a cómo se quieran ver en la documentación:
+- Create the file ['Doxyfile'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/Doxyfile), in which the following lines have been modified according to how you want to see them in the documentation:
 
 ```bash
 doxygen -g Doxyfile
 ```
 
-Línea 35: PROJECT_NAME = “JULIO VEGANOS E HIJOS DOCUMENTATION”.
+Line 35: PROJECT_NAME = “JULIO VEGANOS E HIJOS DOCUMENTATION”.
 
-Línea 47: PROJECT_BRIEF = “Doxygen documentation of my system”.
+Line 47: PROJECT_BRIEF = “Doxygen documentation of my system”.
 
-Línea 61: OUTPUT_DIRECTORY = “doxygen-doc”.
+Line 61: OUTPUT_DIRECTORY = “doxygen-doc”.
 
-Una vez hecho todo esto, se ejecutará doxygen en el directorio donde se tengan almacenados todos los ficheros fuente y de cabecera, generándose así dentro del directorio ['doxygen-doc'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/doc/doxygen-doc) la documentación completa del sistema, tanto en html como en latex.
+Once all this is done, doxygen will be run in the directory where all the source and header files are stored, thus generating the complete system documentation in both HTML and LaTeX within the ['doxygen-doc'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/doc/doxygen-doc) directory.
 
-Para visualizar la documentación HTML: Dentro del repositorio ['doxygen-doc/html'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/doc/doxygen-doc/html), se debe ejecutar en una terminal el siguiente comando.
+To view the HTML documentation: Within the repository ['doxygen-doc/html'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/doc/doxygen-doc/html), the following command must be run in a terminal.
 
 ```bash
 firefox index.html
 ```
 
-Para visualizar la documentación LATEX: Dentro del repositorio ['doxygen-doc/latex'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/doc/doxygen-doc/latex), en el fichero ['refman.pdf'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/doc/doxygen-doc/latex/refman.pdf), se encuentra la documentación del sistema en formato PDF.
+To view LATEX documentation: Inside the repository ['doxygen-doc/latex'](https://github.com/aleon2020/DS_2022-2023/tree/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/doc/doxygen-doc/latex), in the file ['refman.pdf'](https://github.com/aleon2020/DS_2022-2023/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica%209%3A%20Uso%20de%20patrones%20de%20dise%C3%B1o/doc/doxygen-doc/latex/refman.pdf), finds the system documentation in PDF format.
